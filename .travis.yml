@@ -1,7 +1,9 @@
 language: c
 compiler:
   - gcc
-script: cd src && ./configure && make && ./testall.sh
+script:
+  - cd src && ./configure && make
+  - src/testall.sh
 before_install:
- - sudo apt-get update -qq
- - sudo apt-get install -qq vim
+  - sudo apt-get update -qq
+  - sudo apt-get install -qq vim
