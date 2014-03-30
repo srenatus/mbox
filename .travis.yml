@@ -1,6 +1,4 @@
 language: c
 compiler:
   - gcc
-script:
-  - cd src && cp {.,}configsbox.h && ./configure && make
-  - src/testall.sh
+script: cd src && cp {.,}configsbox.h && ./configure && make && ./testall.sh
